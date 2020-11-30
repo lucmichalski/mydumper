@@ -7,7 +7,7 @@ set(ARCHIVE_NAME "${CMAKE_PROJECT_NAME}-${VERSION}")
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules)
 find_package(MySQL)
 find_package(ZLIB)
-find_package(GLIB2)
+find_package(GLIB2 REQUIRED)
 find_package(PCRE)
 
 option(BUILD_DOCS "Build the documentation" ON)
